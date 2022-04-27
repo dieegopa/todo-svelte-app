@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	--tw-bg-opacity: 1;
+	background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+	font-family: "Roboto", sans-serif;
+}
+
+.box-shadow {
+	box-shadow: rgba(0, 55, 255, 0.4) 5px 5px, rgba(0, 55, 255, 0.4) 10px 10px;
+}
+
+input:checked + div {
+	@apply border-blue-500;
+}
+input:checked + div svg {
+	@apply block;
+}
